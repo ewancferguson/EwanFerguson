@@ -3,261 +3,124 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Ewan Ferguson Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 
 <body>
   <nav id="desktop-nav">
     <div class="logo">Ewan Ferguson</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Ewan Ferguson</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+  
+
   <section id="profile">
     <div class="section__pic-container">
-      <img class="pfp" src="./assets/IMG_0032.png" alt="John Doe profile picture" />
+      <img class="pfp" src="./assets/IMG_0032.png" alt="Ewan Ferguson profile picture" />
     </div>
     <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
+      <p>Hello, I'm</p>
       <h1 class="title">Ewan Ferguson</h1>
-      <p class="section__text__p2">Software Developer</p>
+      <p>Software Developer</p>
       <div class="btn-container">
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
+        <a href="#contact" class="btn">Contact Info</a>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-          onclick="location.href='https://www.linkedin.com/in/ewan-ferguson01/'" />
-        <img src="./assets/github.png" alt="My Github profile" class="icon"
-          onclick="location.href='https://github.com/ewancferguson'" />
+        <a href="https://www.linkedin.com/in/ewan-ferguson01/"><img src="./assets/linkedin.png" alt="LinkedIn" class="icon" /></a>
+        <a href="https://github.com/ewancferguson"><img src="./assets/github.png" alt="Github" class="icon" /></a>
       </div>
     </div>
   </section>
+
   <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h1 class="title">About Me</h1>
+    <h2 class="title">About Me</h2>
     <div class="section-container">
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experience</h3>
-            <p>Boise Codeworks<br />Software Development Intern</p>
-          </div>
-          <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon" />
-            <h3>Education</h3>
-            <p>Associates of Science<br />Engineering</p>
-          </div>
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>Boise Codeworks<br />Software Development Intern</p>
         </div>
-        <div class="text-container">
-          <p>
-            My journey started with an Associate’s degree in Engineering, where I developed a strong foundation in
-            analytical thinking and problem-solving. However, along the way, I discovered my true passion—software
-            development.
-
-            What drew me in was the endless opportunity to solve complex problems, build innovative solutions, and
-            continuously learn new things. The ability to turn an idea into a working application excites me every day,
-            and I thrive on the challenge of writing clean, efficient, and scalable code.
-
-            I specialize in JavaScript, C#, and Vue.js, and I’m always looking to expand my skill set. Whether it’s
-            front-end development, back-end logic, or learning the latest tech, I love pushing my boundaries and growing
-            as a developer.
-
-            For me, software development is more than just a career—it’s a passion that keeps me engaged, curious, and
-            excited about the future.
-
-            Let’s build something great! 🚀
-          </p>
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>Associates of Science<br />Engineering</p>
         </div>
       </div>
+      <p class="about-text">
+        My journey began with an Associate’s degree in Engineering, but my passion led me to software development. I
+        enjoy solving complex problems and creating impactful solutions using JavaScript, C#, and Vue.js. Every project
+        excites me to learn and grow. Let's build something amazing together! 🚀
+      </p>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
+
   <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
+    <h2 class="title">Experience</h2>
     <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>HTML</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>CSS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SASS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>JavaScript</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Vue.js</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Scrum</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>SQL</h3>
-
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Node JS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>MongoDB</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Csharp</h3>
-              </div>
-            </article>
-          </div>
-        </div>
+      <div class="details-container">
+        <h3>Frontend Development</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS & SASS</li>
+          <li>JavaScript</li>
+          <li>Vue.js</li>
+          <li>Scrum</li>
+        </ul>
+      </div>
+      <div class="details-container">
+        <h3>Backend Development</h3>
+        <ul>
+          <li>SQL</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>C#</li>
+        </ul>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
+
   <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <!-- <img src="./assets/project-1.png" alt="Project 1" class="project-img" /> -->
-          </div>
-          <h2 class="experience-sub-title project-title">All Spice</h2>
-          <p>AllSpice is a dynamic web application designed for food lovers who enjoy creating, sharing, and
-            discovering recipes. Whether you're a seasoned chef or a home cook, AllSpice provides a seamless platform
-            to upload your own recipes, explore dishes from other users, and save your favorites for later.</p>
-          <div class="btn-container">
-            <a href="https://github.com/ewancferguson/all_spice">
-              <button class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-            <a href="https://allspice.ewanferguson.org/#/">
-              <button class="btn btn-color-2 project-btn">
-                Live Demo
-              </button>
-            </a>
-          </div>
+    <h2 class="title">Projects</h2>
+    <div class="projects-grid">
+      <div class="details-container color-container">
+        <h3 class="project-title">All Spice</h3>
+        <p>A dynamic recipe-sharing app for food lovers to create, share, and discover new dishes.</p>
+        <div class="btn-container">
+          <a href="https://github.com/ewancferguson/all_spice" class="btn project-btn">GitHub</a>
+          <a href="https://allspice.ewanferguson.org/#/" class="btn project-btn">Live Demo</a>
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <!-- <img src="./assets/project-2.png" alt="Project 2" class="project-img" /> -->
-          </div>
-          <h2 class="experience-sub-title project-title">Keepr</h2>
-          <p>Keepr is a visually engaging web application designed for users who love collecting, organizing, and
-            sharing images. Whether you’re into design, fashion, travel, or DIY projects, Keepr offers a seamless
-            platform to save inspiring images, explore curated content from other users, and organize your collections
-            effortlessly.</p>
-          <div class="btn-container">
-            <a href="https://github.com/ewancferguson/keepr">
-              <button class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-            <a href="https://keepr.ewanferguson.org/#/">
-              <button class="btn btn-color-2 project-btn">
-                Live Demo
-              </button>
-            </a>
-          </div>
+      </div>
+      <div class="details-container color-container">
+        <h3 class="project-title">Keepr</h3>
+        <p>A platform for organizing and sharing image collections with an intuitive UI. A Pinterest Clone.</p>
+        <div class="btn-container">
+          <a href="https://github.com/ewancferguson/keepr" class="btn project-btn">GitHub</a>
+          <a href="https://keepr.ewanferguson.org/#/" class="btn project-btn">Live Demo</a>
         </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <!-- <img src="./assets/project-3.png" alt="Project 3" class="project-img" /> -->
-
-          </div>
-          <h2 class="experience-sub-title project-title">Tower</h2>
-          <p>Tower is a dynamic ticketing platform designed to create and discover events, grab tickets, and engage with others through comments and reviews. Whether hosting a local gathering or joining a global fest, Pulse connects communities in real-time, turning every event into a shared experience.</p>
-          <div class="btn-container">
-            <a href="https://github.com/ewancferguson/tower">
-              <button class="btn btn-color-2 project-btn">
-                Github
-              </button>
-            </a>
-            <a href="https://tower.ewanferguson.org/#/">
-              <button class="btn btn-color-2 project-btn">
-                Live Demo
-              </button>
-            </a>
-          </div>
+      </div>
+      <div class="details-container color-container">
+        <h3 class="project-title">Tower</h3>
+        <p>A ticketing platform for creating and discovering events and engaging communities.</p>
+        <div class="btn-container">
+          <a href="https://github.com/ewancferguson/tower" class="btn project-btn">GitHub</a>
+          <a href="https://tower.ewanferguson.org/#/" class="btn project-btn">Live Demo</a>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
+
   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <h2 class="title">Contact Me</h2>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
         <p><a href="mailto:ewanferg01@gmail.com">ewanferg01@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
@@ -266,17 +129,15 @@
       </div>
     </div>
   </section>
+
   <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>© 2025 Ewan Ferguson. All rights reserved.</p>
   </footer>
   <script src="script.js"></script>
 </body>
