@@ -79,8 +79,10 @@ section {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
+/* General button style */
 .btn {
   background: #4b6cb7;
   color: #fff;
@@ -95,6 +97,24 @@ section {
 
 .btn:hover {
   background: #182848;
+}
+
+/* Project-specific button tweaks */
+.project-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
 }
 
 #socials-container {
@@ -118,6 +138,15 @@ section {
   line-height: 1.9;
   text-align: justify;
   padding: 0 20px;
+}
+
+/* Project containers (card style upgrade) */
+.color-container {
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
 .projects-grid, .experience-details-container, .about-containers {
