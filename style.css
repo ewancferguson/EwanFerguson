@@ -8,11 +8,13 @@ body {
 
 nav#desktop-nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, #4b6cb7, #182848);
   color: #fff;
-  padding: 20px 60px;
+  padding: 20px 30px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,23 +22,29 @@ nav#desktop-nav {
 }
 
 nav#desktop-nav .logo {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 nav#desktop-nav .nav-links {
   list-style: none;
   display: flex;
-  gap: 40px;
-  margin: 0;
+  flex: 1 1 100%;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 }
 
 nav#desktop-nav .nav-links li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.15rem;
-  padding: 10px 20px;
+  font-size: 1.1rem;
+  padding: 10px 16px;
   border-radius: 8px;
   transition: background 0.3s, color 0.3s;
 }
@@ -75,15 +83,16 @@ section {
 }
 
 .btn-container {
-  margin: 50px 0;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
   flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 0;
 }
 
-/* General button style */
-.btn {
+.btn,
+.project-btn {
   background: #4b6cb7;
   color: #fff;
   padding: 16px 32px;
@@ -92,28 +101,13 @@ section {
   text-decoration: none;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  text-align: center;
 }
 
-.btn:hover {
-  background: #182848;
-}
-
-/* Project-specific button tweaks */
-.project-btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
+.btn:hover,
 .project-btn:hover {
-  background-color: #45a049;
+  background: #182848;
   transform: translateY(-2px);
 }
 
@@ -140,16 +134,9 @@ section {
   padding: 0 20px;
 }
 
-/* Project containers (card style upgrade) */
-.color-container {
-  padding: 1.5rem;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-.projects-grid, .experience-details-container, .about-containers {
+.projects-grid,
+.experience-details-container,
+.about-containers {
   display: grid;
   gap: 60px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -167,6 +154,10 @@ section {
 .details-container p {
   margin-top: 20px;
   line-height: 1.8;
+}
+
+.color-container .btn-container {
+  margin-top: 20px;
 }
 
 footer {
@@ -199,24 +190,76 @@ footer ul li a:hover {
 @media (max-width: 768px) {
   nav#desktop-nav {
     flex-direction: column;
-    padding: 25px;
+    align-items: center;
+    padding: 20px;
   }
-  
-  nav#desktop-nav .nav-links {
-    gap: 25px;
+
+  nav#desktop-nav .logo {
+    margin-bottom: 15px;
   }
-  
+
   .section__text .title {
     font-size: 2.4rem;
   }
-  
+
   .btn-container {
     flex-direction: column;
     gap: 20px;
   }
-  
-  .projects-grid, .experience-details-container, .about-containers {
+
+  .projects-grid,
+  .experience-details-container,
+  .about-containers {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    padding: 60px 20px;
+  }
+
+  .pfp {
+    width: 200px;
+  }
+
+  .section__text .title {
+    font-size: 2rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .project-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .color-container {
+    padding: 1.2rem;
+  }
+
+  footer ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav#desktop-nav {
+    padding: 15px 10px;
+  }
+
+  nav#desktop-nav .logo {
+    font-size: 1.5rem;
+  }
+
+  nav#desktop-nav .nav-links li a {
+    font-size: 1rem;
+    padding: 8px 12px;
   }
 }
